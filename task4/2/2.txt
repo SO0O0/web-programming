@@ -1,0 +1,47 @@
+PHP プログラム(A)では，
+
+```
+<?php
+echo "        <title>ページタイトル</title>\n";
+?>
+```
+が問題である．
+print <<<EOT から EOT;まではヒアドキュメント構文による文字列リテラルであり，
+PHP プログラム(A)では，文字リテラル内にphpソースを書いてしまっている．
+
+正しくは，
+
+```
+<?php echo <<<EOT
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <title>ページタイトル</title>
+        </head>
+        <body>
+            <p> Hello PHP world! </p>
+        </body>
+    </html>'
+EOT;
+```
+
+とするか，
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title><?php echo 'ページタイトル'; ?></title>
+</head>
+
+<body>
+    <p> Hello PHP world! </p>
+</body>
+
+</html>
+```
+
+とする．
