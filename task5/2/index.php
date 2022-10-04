@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
 $a[0]['date'] = '2010/4/1';
 $a[0]['temperature'] = 20.3;
@@ -16,6 +14,9 @@ $a[2]['temperature'] = 18.3;
 $a[2]['pressure'] = 950;
 $a[2]['humidity'] = 70;
 ?>
+
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8" />
