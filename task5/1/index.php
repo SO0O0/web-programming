@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
 <?php
 $price['apple'] = 150;
 $price['orange'] = 120;
 $price['pinapple'] = 300;
 ?>
+
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8" />
