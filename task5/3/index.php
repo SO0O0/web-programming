@@ -1,3 +1,8 @@
+<?php
+$cost_apple = 100;
+$cost_banana = 50;
+$cost_pine = 200;
+?>
 <!DOCTYPE html>
 <html>
 
@@ -68,6 +73,9 @@
 
 
         ?>
+        <br>
+        <?php echo "" . ($apple + $banana + $pine) . "個のフルーツがあります";
+        echo "合計金額" . ($apple * $cost_apple + $banana * $cost_banana + $pine * $cost_pine) . "円です"  ?>
     </div>
 </body>
 
@@ -97,11 +105,11 @@
     a {
         height: 1rem;
         margin: 1rem;
+        text-decoration: none;
     }
 
     .container {
         width: 80%;
-        max-width: 1000px;
     }
 
     .fruits-wrapper {
