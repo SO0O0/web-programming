@@ -42,32 +42,29 @@ $cost_pine = 200;
         echo '</div>';
 
         echo '<div class="fruits-wrapper">';
-        // echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . ($apple + 1) . "&banana=" . $banana . "&pine=" . $pine . "'>リンゴを1個追加</a>";
-        // echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . ($banana + 1) . "&pine=" . $pine . "'>バナナを1個追加</a>";
-        // echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . $banana . "&pine=" . ($pine + 1) . "'>パイナップルを1個追加</a>";
-        echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . ($apple + 1) . "&banana=" . $banana . "&pine=" . $pine . "'>リンゴを1個追加</a>";
-        echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=" . ($banana + 1) . "&pine=" . $pine . "'>バナナを1個追加</a>";
-        echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=" . $banana . "&pine=" . ($pine + 1) . "'>パイナップルを1個追加</a>";
+        echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . ($apple + 1) . "&banana=" . $banana . "&pine=" . $pine . "'>リンゴを1個追加</a>";
+        echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . ($banana + 1) . "&pine=" . $pine . "'>バナナを1個追加</a>";
+        echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . $banana . "&pine=" . ($pine + 1) . "'>パイナップルを1個追加</a>";
         echo '</div>';
 
         echo '<div class="fruits-wrapper">';
         if ($apple > 0) {
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . ($apple - 1) . "&banana=" . $banana . "&pine=" . $pine . "'>リンゴを1個減らす</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . ($apple - 1) . "&banana=" . $banana . "&pine=" . $pine . "'>リンゴを1個減らす</a>";
         } else {
             $apple = 0;
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=0&banana=" . $banana . "&pine=" . $pine . "'>これ以上減らせません</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=0&banana=" . $banana . "&pine=" . $pine . "'>これ以上減らせません</a>";
         }
         if ($banana > 0) {
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=" . ($banana - 1) . "&pine=" . $pine . "'>バナナを1個減らす</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . ($banana - 1) . "&pine=" . $pine . "'>バナナを1個減らす</a>";
         } else {
             $banana = 0;
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=0&pine=" . $pine . "'>これ以上減らせません</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=0&pine=" . $pine . "'>これ以上減らせません</a>";
         }
         if ($pine > 0) {
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=" . $banana . "&pine=" . ($pine - 1) . "'>パイナップルを1個減らす</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . $banana . "&pine=" . ($pine - 1) . "'>パイナップルを1個減らす</a>";
         } else {
             $pine = 0;
-            echo "<a href='http://127.0.0.1:8080/task5/3/index.php?apple=" . $apple . "&banana=" . $banana . "&pine=0" . "'>これ以上減らせません</a>";
+            echo "<a href='http://127.0.0.1:10800/~sspuser?apple=" . $apple . "&banana=" . $banana . "&pine=0" . "'>これ以上減らせません</a>";
         }
         echo '</div>';
 
