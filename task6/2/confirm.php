@@ -8,16 +8,23 @@
 
 <body>
     <div class="container">
-        <p>記事入力画面</p>
-        <form action="confirm.php" method="post" class="contents">
-            <textarea name="article"></textarea>
-            <button type="submit" onclick="location.href='./confirm.php'">投稿</button>
+        <p>以下の内容でよろしいですか？</p>
+        <div class="confirm-contents" name="article">
+            <?php
+            $article = $_POST['article'];
+            echo  $article;
+            ?>
+        </div>
+        <form method="post" class="contents">
+            <input type="hidden" name="article" value="<?php echo $article; ?>">
+            <button formaction="index.php">投稿</button>
+            <input type="hidden" name="article" value="<?php echo $article; ?>">
+            <button formaction="post.php">修正</button>
         </form>
     </div>
 </body>
 
 </html>
-
 <style>
     body {
         display: flex;
@@ -33,8 +40,18 @@
         height: 80vh;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         margin-top: 75px;
+    }
+
+    .confirm-contents {
+        max-width: 100%;
+        width: 600px;
+        height: 500px;
+        border: 3px solid #404040;
+        padding: 10px;
+        overflow: scroll;
     }
 
     p {
@@ -42,21 +59,8 @@
         font-weight: bold;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    textarea {
-        width: 600px;
-        height: 500px;
-        border: 3px solid #404040;
-    }
-
     button {
-        font-size: 0.7rem;
+        font-size: 1.0rem;
         font-weight: bold;
         line-height: 1.0;
         position: relative;
