@@ -11,7 +11,7 @@
         <p>記事入力画面</p>
         <form action="confirm.php" method="post" class="contents">
             <textarea name="article"></textarea>
-            <button type="submit" onclick="location.href='./confirm.php'">新規投稿</button>
+            <button type="submit" onclick="location.href='./confirm.php'">投稿</button>
         </form>
     </div>
 </body>
